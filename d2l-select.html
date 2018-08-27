@@ -1,0 +1,32 @@
+<link rel="import" href="../polymer/polymer.html">
+
+<!--
+`d2l-select`
+Polymer-based web component for D2L select lists.
+@demo demo/index.html
+-->
+
+<dom-module id="d2l-select">
+	<template strip-whitespace>
+		<style>
+			:host {
+				display: inline-block;
+			}
+			:host([hidden]) {
+				display: none;
+			}
+		</style>
+		<h2>Hello [[prop1]]!</h2>
+	</template>
+	<script>
+		Polymer({
+			is: 'd2l-select',
+			properties: {
+				prop1: {
+					type: String,
+					value: 'd2l-select',
+				}
+			}
+		});
+	</script>
+</dom-module>
